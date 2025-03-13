@@ -14,10 +14,9 @@ const utilities = require("./utilities/")
 const session = require("express-session")
 const pool = require("./database/")
 const generalRoute = require("./routes/generalRoute")
-// const contactRoute = require("./routes/messageRoute")
+const projectRoute = require("./routes/projectRoute")
 const accountRoute = require("./routes/accountRoute")
-// const aboutRoute = require("./routes/aboutRoute")
-// const menuRoute = require("./routes/menuRoute")
+const resumeRoute = require("./routes/resumeRoute")
 const bodyParser = require("body-parser")
 const cookieParser = require("cookie-parser")
 
@@ -66,8 +65,8 @@ app.use(static)
 // Index route
 app.get("/", generalRoute)
 
-// // Contact Route
-// app.use("/contact", contactRoute)
+// Project Route
+app.use("/projects", projectRoute)
 
 // Account Route
 app.use("/account", accountRoute)
@@ -76,8 +75,8 @@ app.use("/account", accountRoute)
 app.get("/about", generalRoute)
 
 
-// // Menu Route
-// app.use("/menu", menuRoute)
+// Resume Route
+app.use("/resume", resumeRoute)
 
 // File Not Found Route - must be last route in list
 app.use(async (req, res, next) => {
