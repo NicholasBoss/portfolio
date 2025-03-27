@@ -1,6 +1,9 @@
 DROP TABLE IF EXISTS account;
 DROP TYPE IF EXISTS account_type;
 DROP TABLE IF EXISTS description;
+DROP TABLE IF EXISTS resume_education;
+DROP TABLE IF EXISTS resume_experience;
+DROP TABLE IF EXISTS resume_society;
 DROP TABLE IF EXISTS resume_project;
 DROP TABLE IF EXISTS society_project;
 DROP TABLE IF EXISTS project;
