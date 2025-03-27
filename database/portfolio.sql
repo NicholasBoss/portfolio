@@ -156,7 +156,7 @@ CREATE TABLE IF NOT EXISTS resume
 (
     resume_id SERIAL,
     resume_name CHARACTER VARYING NOT NULL,
-    CONSTRAINT resume_pk PRIMARY KEY (resume_id),
+    CONSTRAINT resume_pk PRIMARY KEY (resume_id)
 );
 
 
@@ -225,7 +225,7 @@ CREATE TABLE IF NOT EXISTS resume_experience
         REFERENCES experience (experience_id)
         ON DELETE CASCADE
         ON UPDATE CASCADE
-)
+);
 
 -- -----------------------------------------------------
 -- Table resume_skill
