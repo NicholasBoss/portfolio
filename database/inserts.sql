@@ -88,7 +88,7 @@ VALUES
 ),
 ( 'Project Manager'
 , (SELECT society_id FROM society WHERE society_name = 'Data Science Society (DSS)')
-, (SELECT project_id FROM project WHERE project_name = 'Clearview')
+, (SELECT project_id FROM project WHERE project_name = 'ClearView')
 );
 
 INSERT INTO skill
@@ -116,24 +116,24 @@ INSERT INTO experience
 VALUES
 ( 'Legrande Health Data Technician'
 , 'August 2024 - Present'
-, 1
-, 0
-, 0 ),
+, '1'
+, '0'
+, '0' ),
 ( 'BYU-Idaho Teaching Assistant'
 , 'September 2021 - December 2024'
-, 1
-, 0
-, 0 ),
+, '1'
+, '0'
+, '0' ),
 ( 'Missionary in Argentina'
 , 'October 2018 - April 2020'
-, 0
-, 1
-, 0 ),
+, '0'
+, '1'
+, '0' ),
 ( 'Eagle Scout'
 , 'November - December 2015'
-, 0
-, 0
-, 1 );
+, '0'
+, '0'
+, '1' );
 
 INSERT INTO description
 ( description_paragraph
@@ -427,7 +427,7 @@ VALUES
 ),
 (
     (SELECT resume_id FROM resume WHERE resume_name = 'General')
-,   (SELECT project_id FROM project WHERE project_name = 'ITM 111 Auto Grader Program')
+,   (SELECT project_id FROM project WHERE project_name = 'ITM 111 Auto Grading Program')
 ),
 (
     (SELECT resume_id FROM resume WHERE resume_name = 'General')
