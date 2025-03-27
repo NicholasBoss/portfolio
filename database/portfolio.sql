@@ -41,8 +41,8 @@ CREATE TABLE IF NOT EXISTS project
     project_name CHARACTER VARYING NOT NULL,
     project_description CHARACTER VARYING NOT NULL,
     project_link CHARACTER VARYING NOT NULL,
-    project_github_link CHARACTER VARYING NOT NULL,
-    project_image CHARACTER VARYING NOT NULL,
+    project_github_link CHARACTER VARYING NULL,
+    project_image CHARACTER VARYING NULL,
     CONSTRAINT project_pk PRIMARY KEY (project_id)
 );
 
@@ -152,26 +152,77 @@ CREATE TABLE IF NOT EXISTS education
 CREATE TABLE IF NOT EXISTS resume
 (
     resume_id SERIAL,
-    education_id INTEGER NOT NULL,
-    society_id INTEGER NOT NULL,
-    experience_id INTEGER NOT NULL,
+    resume_name CHARACTER VARYING NOT NULL,
     CONSTRAINT resume_pk PRIMARY KEY (resume_id),
-    CONSTRAINT resume_fk1
+);
+
+
+
+-- -----------------------------------------------------
+-- Table resume_education
+-- -----------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS resume_education
+(
+    resume_education_id SERIAL,
+    resume_id INTEGER NOT NULL,
+    education_id INTEGER NOT NULL,
+    CONSTRAINT resume_education_pk PRIMARY KEY (resume_education_id),
+    CONSTRAINT resume_education_fk1
+        FOREIGN KEY (resume_id)
+        REFERENCES resume (resume_id)
+        ON DELETE CASCADE
+        ON UPDATE CASCADE,
+    CONSTRAINT resume_education_fk2
         FOREIGN KEY (education_id)
         REFERENCES education (education_id)
         ON DELETE CASCADE
+        ON UPDATE CASCADE
+);
+
+-- -----------------------------------------------------
+-- Table resume_society
+-- -----------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS resume_society
+(
+    resume_society_id SERIAL,
+    resume_id INTEGER NOT NULL,
+    society_id INTEGER NOT NULL,
+    CONSTRAINT resume_society_pk PRIMARY KEY (resume_society_id),
+    CONSTRAINT resume_society_fk1
+        FOREIGN KEY (resume_id)
+        REFERENCES resume (resume_id)
+        ON DELETE CASCADE
         ON UPDATE CASCADE,
-    CONSTRAINT resume_fk2
+    CONSTRAINT resume_society_fk2
         FOREIGN KEY (society_id)
         REFERENCES society (society_id)
         ON DELETE CASCADE
+        ON UPDATE CASCADE
+);
+
+-- -----------------------------------------------------
+-- Table resume_experience
+-- -----------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS resume_experience
+(
+    resume_experience_id SERIAL,
+    resume_id INTEGER NOT NULL,
+    experience_id INTEGER NOT NULL,
+    CONSTRAINT resume_experience_pk PRIMARY KEY (resume_experience_id),
+    CONSTRAINT resume_experience_fk1
+        FOREIGN KEY (resume_id)
+        REFERENCES resume (resume_id)
+        ON DELETE CASCADE
         ON UPDATE CASCADE,
-    CONSTRAINT resume_fk3
+    CONSTRAINT resume_experience_fk2
         FOREIGN KEY (experience_id)
         REFERENCES experience (experience_id)
         ON DELETE CASCADE
         ON UPDATE CASCADE
-);
+)
 
 -- -----------------------------------------------------
 -- Table resume_skill
