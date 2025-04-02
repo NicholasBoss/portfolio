@@ -10,13 +10,10 @@ const honor = document.querySelector('.res-honor-award');
 
 function displayResume(data) {
     // Use the data object to create the resume
-    console.log(data);
+    // console.log(data);
 
-    // let contactData = data.contact;
     // console.log(dssData);
-    // Create an element to display each part of the resume
-    // const contactElement = document.createElement('div');
-    // contactElement.classList.add('grid');
+
     const educationElement = document.createElement('div');
     educationElement.classList.add('grid');
     const dssElement = document.createElement('div');
@@ -38,12 +35,7 @@ function displayResume(data) {
     // For each contact, education, dss, skills, professional, personal, projects, and honor
     // Use the data object to access the appropriate property
 
-    // Contact
-    // contactElement.innerHTML = `
-    //     <p>${contactData[0].phone}</p>
-    //     <p>${contactData[0].email}</p>
-    //     <p>${contactData[0].location}</p>
-    // `;
+
     // Education
     let educationData = data.education;
     let educationItem = document.createElement('ul');
@@ -64,6 +56,7 @@ function displayResume(data) {
     // Append each dss element to the dss section
     // Use a foreach loop to get each dss
     let dssData = data.dss;
+    try {
     dssData.forEach(dss => {
         const dssItem = document.createElement('ul');
         dssItem.innerHTML = `
@@ -73,31 +66,39 @@ function displayResume(data) {
         `;
         dssElement.appendChild(dssItem);
     });
+    } catch (error) {
+        console.log("Error: ", error);
+    }
 
     // computing_team
 
     let computingTeamData = data.computing_team;
     // console.log(computingTeamData);
-    computingTeamData.forEach(computingTeam => {
-        // console.log(computingTeam.project);
-        const computingTeamItem = document.createElement('ul');
-        compDescriptions = computingTeam.description;
-        // console.log(compDescriptions);
-        // compDescription = [];
-        // compDescriptions.forEach(description => {
-        //     compDescription.push(`<li>${description.para}</li>`);
-        // });
+    try {
+        computingTeamData.forEach(computingTeam => {
+            // console.log(computingTeam.project);
+            const computingTeamItem = document.createElement('ul');
+            compDescriptions = computingTeam.description;
+            // // console.log(compDescriptions);
+            // compDescription = [];
+            // compDescriptions.forEach(description => {
+            //     compDescription.push(`<li>${description.para}</li>`);
+            // });
 
-        // compDescription = compDescription.join('');
+            // compDescription = compDescription.join('');
 
-        computingTeamItem.innerHTML = `
-            <li>Company: ${computingTeam.project}</li>
-            <li>Position: ${computingTeam.position}</li>
-            <li>${compDescriptions}</li>
-         `;
+            computingTeamItem.innerHTML = `
+                <li>Company: ${computingTeam.project}</li>
+                <li>Position: ${computingTeam.position}</li>
+                <li>${compDescriptions}</li>
+            `;
+            console.log("Error: ", error);
         computingTeamElement.appendChild(computingTeamItem);
         // console.log(computingTeamElement);
     });
+} catch (error) {
+    console.log("Error: ", error);
+}
 
     // Skills
     // For each skill
@@ -109,6 +110,9 @@ function displayResume(data) {
     let skillList = []
     let skillItem = document.createElement('ul');
     let skillsData = data.skills;
+    try {
+
+
     skillsData.forEach(skill => {
         // console.log(skill.skill);
         skillList.push(`<li>${skill.skill}</li>`);
@@ -119,6 +123,9 @@ function displayResume(data) {
         ${skillList}
     `;
     skillsElement.appendChild(skillItem);
+    } catch (error) {
+        console.log("Error: ", error);
+    }
 
 
 
@@ -131,6 +138,7 @@ function displayResume(data) {
     // Use a foreach loop to get each professional
     let professionalData = data.professional;
     // console.log(professionalData);
+    try {
     professionalData.forEach(professional => {
         const professionalItem = document.createElement('ul');
         professionalItem.classList.add('professional');
@@ -161,6 +169,9 @@ function displayResume(data) {
 
         professionalElement.appendChild(professionalItem);
     });
+    } catch (error) {
+        console.log("Error: ", error);
+}
 
     // Personal
     // For each personal
@@ -171,7 +182,7 @@ function displayResume(data) {
     // Use a foreach loop to get each personal
     let personalData = data.personal;
     // console.log(`PersonalData: ${personalData}`);
-
+    try {
     personalData.forEach(personal => {
         const personalItem = document.createElement('ul');
 
@@ -184,9 +195,10 @@ function displayResume(data) {
         `;
         // console.log(`Personal: ${personal.name}, ${personal.time}, ${personal.description}`);
         personalElement.appendChild(personalItem);
-
-
     });
+    } catch (error) {
+        console.log("Error: ", error);
+    }
 
     // Projects
     // For each project
@@ -197,7 +209,7 @@ function displayResume(data) {
     // Use a foreach loop to get each project
     let projectsData = data.projects;
     // console.log(`ProjectsData: ${projectsData}`);
-
+    try {
     projectsData.forEach(project => {
         const projectItem = document.createElement('ul');
 
@@ -209,6 +221,9 @@ function displayResume(data) {
         projectsElement.appendChild(projectItem);
     
     });
+    } catch (error) {
+        console.log("Error: ", error);
+    }
 
     // Honor
     // For each honor
@@ -219,6 +234,7 @@ function displayResume(data) {
     // Use a foreach loop to get each honor
     let honorData = data.honor;
     // console.log(`HonorData: ${honorData}`);
+    try {
     honorData.forEach(honor => {
         const honorItem = document.createElement('div');
 
@@ -229,6 +245,9 @@ function displayResume(data) {
         honorElement.appendChild(honorItem);
     
     });
+    } catch (error) {
+        console.log("Error: ", error);
+    }
 
     // Append each element to the appropriate section
     
