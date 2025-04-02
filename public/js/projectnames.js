@@ -4,14 +4,18 @@ const dropdown = document.querySelector('.project-names')
 
 function displayNames(data) {
     let projectsData = data.projects;
-    projectsData.forEach(project => {
-        const projectItem = document.createElement('a');
-        projectItem.setAttribute('href', `${project.link}`)
-        projectItem.innerHTML = `
-            <p>${project.name}</p>
-        `;
-        dropdown.appendChild(projectItem);
-    });
+    try {
+        projectsData.forEach(project => {
+            const projectItem = document.createElement('a');
+            projectItem.setAttribute('href', `${project.link}`)
+            projectItem.innerHTML = `
+                <p>${project.name}</p>
+            `;
+            dropdown.appendChild(projectItem);
+        });
+    } catch (error) {
+        console.error('Error displaying project names:', error);
+    }
 }
 
 fetch('./data/projects.json')

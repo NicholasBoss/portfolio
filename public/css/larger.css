@@ -52,14 +52,7 @@
         /* margin-top: 10px; */
     }
     
-    
-    .ta .grid {
-        display: grid;
-        grid-template-rows: 160px 150px 1fr;
-    }
-
-
-    .widget {
-        height: 95%;
+    #passImg {
+        width: 3%;
     }
 }

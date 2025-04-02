@@ -251,6 +251,12 @@ input[type=text], input[type=password] {
 	border: 1px solid #ccc;
 	box-sizing: border-box;
 }
+
+#passImg {
+	width: 10%;
+	cursor: pointer;
+	text-align: center;
+}
   
   /* Set a style for form buttons */
 .login button, .formbtn {
