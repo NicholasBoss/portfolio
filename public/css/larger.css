@@ -9,6 +9,7 @@
     }
 
     .navigation {
+        max-height: fit-content;
         display: flex;
 		flex-direction: row;
 	}
@@ -16,6 +17,7 @@
 	.navigation li {
 		display: block;
 		flex: 1 1 100%;
+        opacity: 100%;
 	}
 
     .navigation li button {
