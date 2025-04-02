@@ -1,0 +1,177 @@
+{
+    "projects": [
+        {
+            "name": "Holes Are Bad",
+            "description": "The goal of the game is to collect a certain number of collectables while avoiding holes, enemies, and other dangerous objects.",
+            "link": "/projects/holesarebad",
+            "githubLink": "https://github.com/NicholasBoss/Holes-Are-Bad",
+            "projectImage": "/images/projects/holesarebad.jpg",
+            "fullDescription": [
+                {
+                    "para": "We wanted to create a game that would challenge the way a player thinks. For instance, in our game, if the player runs over spikes, they will gain more lives. Whereas in most games, spikes would damage the player. However, we didn't want to make things too simple by merely flipping all \"bad\" things to be good and all \"good\" things to be bad. Some things still behave how the player would expect. Our enemies are still bad, like they are in any other game. By not doing a straight good to bad and bad to good flip, we force the player to think and experiment with new concepts."
+                },
+                {
+                    "para": "The goal of the game is to collect a certain number of collectables while avoiding holes, enemies, and other dangerous objects. There are platforms the player will move around on to progress through the game. However, despite looking exactly the same, not all platforms are solid and the player will fall through them. The map segments for level 1 have different \"weights\" for how frequently they will be generated. As such, every instance of a level will be relatively unique to keep it more interesting." 
+                },
+                {
+                    "para": "When starting this project, most of our team was not familiar with C#. We all had a lot to learn before we could even get started. As we learned more C#, the progress rate of our project increased. Due to our slower start, we opted to prioritize functionality over organization with our code. Currently, we still have some organization, but we would like to make it simpler and split some of the larger files into many smaller files."
+                },
+                {
+                    "para": "However, thanks to this approach, we were able to accomplish all of our initial requirements except for graphic animations. For the sake of completing other requirements, we pushed off animations. We created all our graphics from scratch except for the background. Drawing multiple frames to make animations possible is time consuming. We merely ran out of time to finish and implement animations, though, we intend to continue working and implement animations in the future. As we worked on the project, we kept a list of additional ideas that we wanted to include. Even though we ended up not adding animations, we were able to implement slightly more than 2/3 of our additional ideas."
+                }
+            ]   
+        },
+        {
+            "name": "Head Counter App",
+            "description": "This app is to help attendance takers anywhere. This app allows you to click a button and it will decrease the amount of students absent and increase the amount of students that are present. It also allows you to reset each individual class attendance.",
+            "link": "/projects/headcounter",
+            "githubLink": "https://github.com/NicholasBoss/counter",
+            "projectImage": "/images/projects/headcounter.jpg",
+            "fullDescription":[
+                {
+                    "para": "This app is to help attendance takers anywhere. This app allows you to click a button and it will decrease the amount of students absent and increse the amount of students that are present. "
+                },
+                {
+                    "para": "Current version: 2.0"
+                }
+            ]
+        },
+        {
+            "name":"MySQL Database Program",
+            "description": "I have written software that connects to either a sqlite database or to Workbench, a tool that connects to a MySQL server. This program allows the user to add data into the database and then they can see the changes they have made.",
+            "link": "/projects/mysql",
+            "githubLink": "https://github.com/NicholasBoss/SQLdatabase",
+            "projectImage": "/images/projects/mysql.jpg",
+            "fullDescription": [
+                {
+                    "para": "By undertaking the challenge of learning how to connect python to a sql database, I hope to gain more understanding of how SQL language works behind the scenes of a GUI editor for the SQL language such as Workbench."
+                },
+                {
+                    "para": "I have written software that connects to either a sqlite database or to Workbench, a tool that connects to a MySQL server. This program allows the user to add data into the database and then they can see the changes they have made."
+                },
+                {
+                    "para": "I decided to write this program to help students learning about databases see what possibilities there are when it comes to creating a database; they can create one using a tool like Workbench or just by using python and the sqlite3 software. I also made this program to help me further understand how a database is created."
+                }
+            ]
+        },
+        {
+            "name": "The Three Pendants",
+            "description": "In this game, you will gather three pendants to unlock the chest. Use WASD keys to move.",
+            "link": "/projects/threependants",
+            "githubLink": "https://github.com/NicholasBoss/TheThreePendants",
+            "projectImage": "/images/threependants.jpg",
+            "fullDescription" : [
+                {
+                    "para": "In this game you will gather three pendants to unlock the chest using the WASD keys to move."
+                }
+            ]
+        },
+        {
+            "name": "Batter",
+            "description": "This game is a recreation of a batter game where you try to clear all the blocks using the ball and moving the paddle at the bottom of the screen.",
+            "link": "/projects/batter",
+            "githubLink": "https://github.com/NicholasBoss/Batter",
+            "projectImage": "/images/projects/batter.jpg",
+            "fullDescription": [
+                {
+                    "para": "This game is a recreation of a batter game where you try to clear all the blocks using the ball and moving the paddle at the bottom of the screen."
+                }
+            ]
+        },
+        {
+            "name": "MDFire Database",
+            "description": "This is a database that a team and I created for the Madison County Fire Department, located in Rexburg, ID, in the Data Science Society at BYU-Idaho. It allows them to keep track of their employees and their equipment.",
+            "link": "/projects/mdfire",
+            "githubLink": "#",
+            "fullDescription": [
+                {
+                    "para": "This is a database that a team and I created for the Madison County Fire Department, located in Rexburg, ID, in the Data Science Society at BYU-Idaho. It allows them to keep track of their employees and their equipment."
+                },
+                {
+                    "para":"This application started by using a MySQL database; mainly as a way to see the schema we were working with. We used Python and the Streamlit library to connect to the database and create a web interface to access it. To have the database be more readily available to use, we switched over to using SQLite."
+                },
+                {
+                    "para":"The application allows the verified user to add, view, edit, and delete data from the database."
+                },
+                {
+                    "para": "Because of the sensitive nature of the data, I cannot provide an image or a link to the GitHub repository."
+                }
+            ]
+        },
+        {
+            "name": "ClearView",
+            "description": "This is a database that a team and I created for ClearView in the Data Science Society at BYU-Idaho. It allows them to keep track of their work orders.",
+            "link": "/projects/clearview",
+            "githubLink": "#",
+            "fullDescription": [
+                {
+                    "para": "This is a database that a team and I created for ClearView in the Data Science Society at BYU-Idaho. It allows them to keep track of their work orders."
+                },
+                {
+                    "para":"The database that we will start this project in is a MySQL database; mainly as a way to see the schema we were working with. We will use Python and the Streamlit library to connect to the database and create a web interface to access it. To have the database be more readily available to use, we hope to use SQLite."
+                },
+                {
+                    "para":"The application allows the verified user to add, view, edit, and delete data from the database."
+                },
+                {
+                    "para": "Because of the sensitive nature of the data, I cannot provide an image or a link to the GitHub repository."
+                }
+            ]
+        },
+        {
+            "name": "Film Database Frontend",
+            "description": "This application is a frontend for a film database. It allows the user to add, view, edit, and delete data from the database.",
+            "link": "/projects/film",
+            "githubLink": "https://github.com/NicholasBoss/film_application",
+            "projectImage": "/images/projects/film_frontend.jpg",
+            "fullDescription": [
+                {
+                    "para": "This application is a frontend for a film database. It allows the user to add, view, edit, and delete data from the database."
+                },
+                {
+                    "para":"The inspiration for this project came from the Intro to Databases class that I TA for. There arose a question about the need for primary keys in each table. This database shows that need through updating and deleting records contained in the linking tables."
+                }
+            ]
+        },
+        {
+            "name": "Auto Grading Program",
+            "description": "I created a program that will help teachers and TAs grade assignments for the ITM 111 (Intro to Database) class at BYU-Idaho.",
+            "link": "/projects/grading111",
+            "githubLink": "",
+            "projectImage": "/images/projects/gradingexample.jpg",
+            "fullDescription": [
+                {
+                    "para": "I created a program that will help teachers and TAs grade assignments for the ITM 111 (Intro to Database) class at BYU-Idaho."
+                },
+                {
+                    "para":"The inspiration for this project came from the Intro to Databases class that I TA for. With many classes to grade and time seeming to be a constraint, I decided to create programs that would help me (and future TAs) to grade."
+                },
+                {
+                    "para":"The program takes a SQL file that a student submits and compares it to a list of correct answers. The program runs the code students submit and does its best to describe any errors that may have occurred."
+                },
+                {
+                    "para":"Because this program is used for grading, I cannot provide a link to the GitHub repository."
+                }
+            ]
+        },
+        {
+            "name": "Computing Team Database",
+            "description": "This project shows how to combine the languages of Python and SQL to create a simple database.",
+            "link": "/projects/computing",
+            "githubLink": "https://github.com/NicholasBoss/computingprojectapplication",
+            "projectImage": "/images/projects/computingprojectdb.jpg",
+            "fullDescription": [
+                {
+                    "para": "This project shows how to combine the languages of Python and SQL to create a simple database."
+                },
+                {
+                    "para":"The database can be created using either MySQL or SQLite. The Streamlit library allows the application to be used on the web. There are three \"users\" implemented: no user, a student user, and an admin user."
+                },
+                {
+                    "para":"The \"no user\" can only view the projects from the database. The \"student user\" can view the projects and add a project to the database. The \"admin user\" can view the projects, add, update, or delete a project, and even reset the database entirely."
+                }
+            ]
+        }
+
+    ]
+}

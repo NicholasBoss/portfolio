@@ -1,0 +1,155 @@
+{
+    "contact": [
+        {
+            "phone": "971-344-8315",
+            "email": "nicholasboss0914@gmail.com",
+            "location":"Rexburg, ID"
+        }
+    ],
+	"education": [
+		{
+			"degree": "B.S. in Computer Science",
+			"school": "Brigham Young University - Idaho",
+            "location": "Rexburg, ID",
+			"time": "September 2020 - Current",
+			"gpa": "3.8",
+			"expected": "Fall 2025"
+		}
+	],
+	"dss": [
+		{
+			"project": "ClearView",
+			"position": "Project Manager",
+			"description": "Currently helping ClearView to create a database and web application to allow the organization of their work orders."
+		}
+	],
+	"computing_team": [
+		{
+			"project": "BYU-Idaho Computing Team",
+			"position": "President",	
+			"description": "Worked with the BYU-Idaho Computing Team to create a basic web application that will help students hold a list of projects."
+		}
+	],
+	"skills": [
+		{
+			"skill": "MySQL"
+		},
+		{
+			"skill": "AWS"
+		},
+		{
+			"skill": "HTML"
+		},
+		{
+			"skill": "CSS"
+		},
+		{
+			"skill": "JavaScript"
+		},
+		{
+			"skill": "C#"
+		},
+		{
+			"skill": "PL/SQL (Read and Debug)"
+		},
+		{
+			"skill": "PL/pgSQL (Read and Debug)"
+		},
+		{
+			"skill": "Python"
+		},
+		{
+			"skill": "React Native"
+		},
+		{
+			"skill": "Node.js"
+		},
+		{
+			"skill": "Spanish (Fluent)"
+		}
+	],
+	"professional": [
+		{
+			"name": "Legrande Health Data Technician",
+			"time": "August 2024 - Present",
+			"description": [
+				{
+					"para": "Transferred data from AWS to Google Cloud using Cloud Run Functions and listeners running on a Cloud Compute Engine VM"
+				},
+				{
+					"para": "Created a ticketing system to help keep track of orders"
+				}
+			]
+		},
+		{
+			"name": "BYU-Idaho Teaching Assistant",
+			"time": "September 2021 - December 2024",
+			"description": [
+				{
+					"para": "Mentored approximately 1000+ students by helping others learn concepts in the Intro to Databases, Web Fundamentals, and Intro to Cloud courses"
+				},
+				{
+					"para": "Created a 2 hour Concept Workshop helping students prepare and succeed in final exams"
+				},
+				{
+					"para": "Taught various topics such as database normalization, ERD creation, CRUD, CSS grid, HTML, JavaScript"
+				},
+				{
+					"para": "Integrated the AWS system students use for classes in the CSE Department"
+				}
+			]
+		}
+	],
+	"personal": [
+		{
+			"name": "Missionary in Argentina",
+			"time": "Oct. 2018 - April 2020",
+			"description": [
+				{
+					"para": "Learned Spanish (Fluent). Had interactions with people through teaching and service"
+				},
+				{
+					"para": "Discovered how to love the people, work hard, and live within a tight budget"
+				},
+				{
+					"para": "Ascertained how to work with different personalities"
+				}
+			]
+		},
+		{
+			"name": "Eagle Scout",
+			"time": "Nov - Dec 2015",
+			"description": [
+				{
+					"para":"Planned, raised funds, and assembled emergency backpacks for Sexton Mtn. Elementary School" 
+				},
+				{
+					"para":"This involved raising over $1,000 and coordinating twenty volunteers"
+				},
+				{
+					"para":"Total contributed hours: 145"
+				}
+			]
+		}
+	],
+	"projects": [
+		{
+			"name": "Holes Are Bad",
+			"description": "Collaborated with a team as configuration manager and acting team lead using C# to create a fully functional game that has a title and an end screen"
+		},
+		{
+			"name": "Auto Grader Program",
+			"description": "I created a program that will help teachers and TAs grade assignments for the ITM 111 (Intro to Database) class at BYU-Idaho."
+		},
+		{
+			"name": "Film Database Frontend",
+			"description": "Created a frontend for a database that students were working on to show the importance of using primary keys in every table."
+		}
+	],
+	"honor": [
+		{
+			"name": "Eagle Scout",
+			"time": "Jan. 19, 2017"
+		}
+	]
+}

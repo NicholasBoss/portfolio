@@ -34,7 +34,7 @@ VALUES
 , 'This game is a recreation of a batter game where you try to clear all the blocks using the ball and moving the paddle at the bottom of the screen.'
 , '/projects/batter'
 , 'https://github.com/NicholasBoss/Batter'
-, '/images/batter.jpg'
+, '/images/projects/batter.jpg'
 ),
 ( 'MDFire Database'
 , 'This is a database that a team and I created for the Madison County Fire Department, located in Rexburg, ID, in the Data Science Society at BYU-Idaho. It allows them to keep track of their employees and their equipment.'
@@ -58,13 +58,13 @@ VALUES
 , 'I created a program that will help teachers and TAs grade assignments for the ITM 111 (Intro to Database) class at BYU-Idaho.'
 , '/projects/grading111'
 , NULL
-, '/images/gradingexample.jpg'
+, '/images/projects/gradingexample.jpg'
 ),
 ( 'Computing Team Database'
 , 'This project shows how to combine the languages of Python and SQL to create a simple database.'
 , '/projects/computing'
 , 'https://github.com/NicholasBoss/computingprojectapplication'
-, '/images/computingprojectdb.jpg'
+, '/images/projects/computingprojectdb.jpg'
 );
 
 INSERT INTO society
