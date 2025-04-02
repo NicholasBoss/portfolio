@@ -9,11 +9,11 @@ function displayCards(data) {
         projectItem.innerHTML = `
             <h4>${project.name}</h4>
             <p>${project.description}</p>
-            <a href="${project.link}">Learn More</a>
-        `;
-        projectCards.appendChild(projectItem);
-    });
-}
+            `;
+            projectCards.appendChild(projectItem);
+        });
+    }
+    // <a href="${project.link}">Learn More</a>
 
 fetch('/data/projects.json')
     .then(response => response.json())
