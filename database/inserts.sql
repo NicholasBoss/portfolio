@@ -309,7 +309,7 @@ INSERT INTO education
 , education_gpa
 , education_expected_graduation )
 VALUES
-( 'B.S. in Computer Science'
+( 'B.S. in Software Engineering'
 , 'Brigham Young University - Idaho'
 , 'Rexburg, ID'
 , 'September 2020 - Current'
