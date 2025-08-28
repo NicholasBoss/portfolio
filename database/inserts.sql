@@ -327,7 +327,7 @@ INSERT INTO resume_education
 VALUES
 (
     (SELECT resume_id FROM resume WHERE resume_name = 'General')
-,   (SELECT education_id FROM education WHERE education_degree_name = 'B.S. in Computer Science')
+,   (SELECT education_id FROM education WHERE education_degree_name = 'B.S. in Software Engineering')
 );
 
 INSERT INTO resume_society
